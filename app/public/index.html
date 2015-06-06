@@ -87,7 +87,26 @@
 	</form>
 	<h2>Food Truck list:</h2>
 	<ul class="trucks-list"></ul>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    
+    <div id="mocha"></div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="js/libs/mocha.js"></script>
+	<script src="js/libs/chai.js"></script>
+    <script>
+		// variable so we can use expect insted of writing chai.expect
+        var expect = chai.expect;
+        
+        // sets the mocha configuration
+		mocha.setup({
+			ui: "bdd",
+			ignoreLeaks: true
+		});
+		window.onload = function () {
+			mocha.run();
+		};
+	</script>    
 	<script src="client.js"></script>
+    <script src="tests/app.spec.js"></script>
 </body>
 </html>
