@@ -48,10 +48,12 @@ var serveStatic = express.static('public');
 app.use(serveStatic);
 app.use(bodyParser.urlencoded({ extended: true}));
 app.use(bodyParser.json());
+
 // do this last
 app.use('/trucks', truckRouter);
 
+var port = process.env.Port || 3000;
 
-app.listen(3000, function () {
-    console.log('...listening on port 3000...');
+app.listen(port, function () {
+    console.log('...listening on port ', port);
 });

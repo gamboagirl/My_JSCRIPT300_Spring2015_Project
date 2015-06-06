@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Food Trucks</title>
-	<link rel="stylesheet" href="trucks.css" />
+	<link rel="stylesheet" href="css/trucks.css" />
 </head>
 <body>
 	<h1>Food Trucks</h1>
@@ -88,25 +88,9 @@
 	<h2>Food Truck list:</h2>
 	<ul class="trucks-list"></ul>
     
-    <div id="mocha"></div>
-    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-	<script src="js/libs/mocha.js"></script>
-	<script src="js/libs/chai.js"></script>
-    <script>
-		// variable so we can use expect insted of writing chai.expect
-        var expect = chai.expect;
-        
-        // sets the mocha configuration
-		mocha.setup({
-			ui: "bdd",
-			ignoreLeaks: true
-		});
-		window.onload = function () {
-			mocha.run();
-		};
-	</script>    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.2.0/backbone-min.js"></script> 
 	<script src="client.js"></script>
-    <script src="tests/app.spec.js"></script>
 </body>
 </html>
