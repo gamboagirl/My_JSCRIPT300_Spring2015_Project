@@ -18,7 +18,7 @@ router.route('/')
             if (error) {
                 response.status(500).send(error);
             } else {
-                response.json(trucks);
+                response.send(trucks);
             }   
         });
     })

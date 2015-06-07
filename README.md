@@ -1,6 +1,21 @@
 # My_JSCRIPT300_Spring2015_Project
 My JSCRIPT 300 class Project repository aka Module7
 
+NOTE:
+To properly run this project you must do the following:
+1. Run MongoD to load the database
+2. Navigate to the app directory
+3. Launch Nodemon from the app directory
+4. In a web browser, launch 'http://localhost:3000'
+
+To run grunt tasks
+1. Run grunt on the commandline
+
+To add: Mocha tests to be ran through grunt
+
+
+//---------------------------------------------------------------
+
 For this assignment, you're going to set up your class project repository following the structure detailed below. Once you have completed it, you are going to fork this repository, update the README.md with a link to your project repository, then initiate a pull request. __NOTE__: the fork of this repository is NOT your project repository. You are simply forking this repository so you can update the README.md file with a link to your project repository. You can view the [project_structure](https://github.com/JSCRIPT300-Spring2015/project_structure) repository to see (or even fork) the structure you need to use.
 
 To set up your project repository (as a separate repository - not the fork of this assignment repository), add to it the following:
